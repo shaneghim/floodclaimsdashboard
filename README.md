@@ -68,25 +68,25 @@ About a quarter of the claims (25%) came from moderate to low-risk flood zones, 
 
 **Files**
 
-- `FloodClaims.pbit`: the Power BI template (pages, visuals, measures, and data model, without the data, since it is too large to upload onto GitHub)
-- `R/data_clean.R`: trims the raw FEMA file to the needed columns
-- `sql/raw.sql`: checks the raw data
-- `sql/clean.sql`: builds the clean claims and CPI tables
-- `sql/view.sql`: builds the inflation-adjusted claims view and event summary
-- `images/`: dashboard screenshots and demo GIF
+- `floodclaims.pbit`: the Power BI template (pages, visuals, measures, and data model, without the data, since it is too large to upload onto GitHub)
+- `data_clean.R`: trims the raw FEMA file to the needed columns
+- `raw.sql`: checks the raw data
+- `clean.sql`: builds the clean claims and CPI tables
+- `view.sql`: builds the inflation-adjusted claims view and event summary
+- `overview.png, map.png, ..., demo.gif`: dashboard screenshots and demo GIF
 - `README.md`: this page
 
 <ins>To rerun it</ins>
 
 1.  Download the [NFIP Redacted Claims (v3)](https://www.fema.gov/openfema-data-page/nfip-redacted-claims-v3) file from OpenFEMA, and the monthly [CPIAUCSL](https://fred.stlouisfed.org/series/CPIAUCSL) series from FRED starting in 1970.
-2.  Run `R/data_clean.R` to create the trimmed CSV.
+2.  Run `data_clean.R` to create the trimmed CSV.
 3.  In SQL Server, create a database called `FloodClaims`, then use Import Flat File to load the trimmed claims as `raw_claims` (every column as `nvarchar(255)`) and the CPI file as `raw_cpi_monthly`.
 4.  Run the SQL scripts in order: `raw.sql`, `clean.sql`, `03_view.sql`.
-5.  Open `FloodClaims.pbit` in Power BI Desktop and connect to your SQL Server.
+5.  Open `floodclaims.pbit` in Power BI Desktop and connect to your SQL Server.
 
 **Limitations**
 
-This project only uses claims, not policies, so it shows where losses happened but not how likely a flood claim is for a given home. Generally, a state with more policies will naturally have more claims. I adjusted for inflation with CPI, which tracks general prices, not construction costs, so older claims may be undervalued in today’s dollars. FEMA's event names aren't always consistent, and claims not tied to a named storm are grouped under a generic label. The 2026 numbers are incomplete, since recent claims are still bei
+This project only uses claims, not policies, so it shows where losses happened but not how likely a flood claim is for a given home. Generally, a state with more policies will naturally have more claims. I adjusted for inflation with CPI, which tracks general prices, not construction costs, so older claims may be undervalued in today’s dollars. FEMA's event names aren't always consistent, and claims not tied to a named storm are grouped under a generic label. The 2026 numbers are incomplete, since recent claims are still being paid.
 
 **What's next**
 
