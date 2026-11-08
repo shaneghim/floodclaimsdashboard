@@ -30,25 +30,25 @@ Power BI imports the two views. I added a date table connected to the claims and
 
 <ins>Overview</ins>
 
-![Overview page](images/overview.png)
+![Overview page](overview.png)
 
 Overview shows the total claims and payments, payments by year, and the top 10 states by total payments. The three orange bars are 2005 (Hurricane Katrina), 2012 (Sandy), and 2017 (Harvey). 2026 is left out of the yearly chart because claims are still being paid.
 
 <ins>Map</ins>
 
-![Map page](images/map.png)
+![Map page](map.png)
 
 Map visualizes the payments by state, with a table of every state/territory.
 
 <ins>Risk</ins>
 
-![Risk page](images/risk.png)
+![Risk page](risk.png)
 
 Risk reveals the claims and average payments by flood zone, building type, elevation, and whether the home was a primary residence or not.
 
 <ins>Major events</ins>
 
-![Major events page](images/events.png)
+![Major events page](events.png)
 
 The major events page highlights the 15 costliest storms, and contains a scatter plot comparing how many properties each storm flooded with how much damage it did per property.
 
