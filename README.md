@@ -4,7 +4,7 @@ This project analyzes every National Flood Insurance Program (NFIP) claim from 1
 
 [View the interactive dashboard](https://shaneghim.github.io/floodclaimsdashboard/) (opens in Power BI)
 
-![Dashboard demo](images/demo.gif)
+![Dashboard demo](demo.gif)
 
 **Data**
 
