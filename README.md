@@ -2,8 +2,6 @@
 
 This project analyzes every National Flood Insurance Program (NFIP) claim from 1978 to 2026, over 2.7 million claims. I trimmed FEMA's raw file in R, cleaned and summarized it in SQL Server, and built an interactive Power BI dashboard showing where flood losses happen, what drives them, and which storms cost the most.
 
-[View the interactive dashboard](https://shaneghim.github.io/floodclaimsdashboard/) (opens in Power BI)
-
 ![Dashboard demo](demo.gif)
 
 **Data**
