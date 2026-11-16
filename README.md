@@ -1,3 +1,5 @@
+<a href="https://shaneghim.github.io/" style="display:inline-block;padding:4px 12px;border:1px solid #d6dbe1;border-radius:999px;font-family:Helvetica,Arial,sans-serif;font-size:0.85rem;color:#1f4e79;text-decoration:none;background:#fff;">&larr; All projects</a>
+
 # U.S. Flood Insurance Claims Dashboard: SQL Server and Power BI
 
 This project analyzes every National Flood Insurance Program (NFIP) claim from 1978 to 2026, over 2.7 million claims. I trimmed FEMA's raw file in R, cleaned and summarized it in SQL Server, and built an interactive Power BI dashboard showing where flood losses happen, what drives them, and which storms cost the most.
