@@ -1,7 +1,7 @@
-title: "U.S. Flood Insurance Claims Dashboard: SQL Server and Power BI"
+title: "U.S. Flood Insurance Claims Dashboard"
 theme: jekyll-theme-primer
 defaults:
   - scope:
       path: ""
     values:
-      title: "U.S. Flood Insurance Claims Dashboard: SQL Server and Power BI"
+      title: "U.S. Flood Insurance Claims Dashboard"
